@@ -1,14 +1,23 @@
-.page-footer__wrapper,
-.page-footer__contacts {
-  background-color: #f2f2f2;
-}
+.page-footer {
+  &__wrapper,
+  &__contacts {
+    background-color: @color-bg-secondary;
+  }
 
-.page-footer__logo {
-  display: block;
-  padding-top: 39px;
-  padding-bottom: 31px;
+  &__logo {
+    display: block;
+    padding-top: 39px;
+    padding-bottom: 31px;
 
-  text-align: center;
+    text-align: center;
 
-  border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid @color-border;
+    &:hover {
+      .logo-hover();
+    }
+
+    &:active {
+      .logo-active();
+    }
+  }
 }

@@ -1,0 +1,71 @@
+.pseudo(@position: absolute;
+@display: block) {
+  content: "";
+  position: @position;
+
+  display: @display;
+}
+
+//Недодел
+.title-line(@position; @display) {
+  top: 50%;
+
+  height: 3px;
+  margin-left: 24px;
+
+  vertical-align: middle;
+
+  background-color: @color-bg-main;
+
+.pseudo(@position; @display);
+}
+
+.margin-center() {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.font-main(@size: 14px;
+@line-height: 18px; ) {
+  font-size: @size;
+  line-height: @line-height;
+  font-family: @font-main;
+  color: @color-text;
+}
+
+.title-section(@padding: 31px 0 35px;
+@color: #111111) {
+  margin: 0;
+  padding: @padding;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: @color;
+}
+
+.font-item() {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.font-title-product(@color: #111111) {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color;
+  text-transform: uppercase;
+}
+
+.logo-hover() {
+  opacity: 0.8;
+}
+
+.logo-active() {
+  opacity: 0.6;
+}
