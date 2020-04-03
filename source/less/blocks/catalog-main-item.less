@@ -9,22 +9,28 @@
   &:first-of-type {
     border-top: 1px solid @color-border;
   }
+}
 
-  &__title {
-    margin: 0 auto;
-    padding: 83px 0 11px;
+.catalog-main-item__title {
+  margin: 0 auto;
+  padding: 83px 0 11px;
 
-    text-align: center;
+  text-align: center;
 
-.font-title-product();
-  }
+  .font-title-product();
+}
 
-  &__text {
-    margin: 0 auto;
-    padding-bottom: 22px;
-  }
+.catalog-main-item__text {
+  margin: 0 auto;
+  padding-bottom: 22px;
 
-  &__image {
-    order: -1;
-  }
+  font-family: @font-text;
+}
+
+.catalog-main-item__image {
+  order: -1;
+}
+
+.catalog-main-item__link {
+  font-size: 16px;
 }
