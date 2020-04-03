@@ -1,0 +1,33 @@
+.main-nav {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 19px;
+
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  padding: 0;
+
+  vertical-align: middle;
+
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  cursor: pointer;
+
+  &--open {
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  &--close {
+    background-image: url("../img/icon-close.svg");
+  }
+}

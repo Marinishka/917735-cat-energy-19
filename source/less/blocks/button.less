@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  &--color-main {
+    color: white;
+
+    background-color: @color-bg-main;
+    &:hover,
+    &:focus {
+      background-color: @color-bg-main-hvr;
+    }
+
+    &:active {
+      color: @color-text-main-active;
+
+      background-color: @color-bg-main-hvr;
+    }
+  }
+
+  &--color-secondary {
+    color: @color-text;
+
+    background-color: @color-bg-secondary;
+    &:hover,
+    &:focus {
+      background-color: @color-bg-secondary-hvr;
+    }
+
+    &:active {
+      color: @color-text-secondary-active;
+
+      background-color: @color-bg-secondary-hvr;
+    }
+  }
+}
