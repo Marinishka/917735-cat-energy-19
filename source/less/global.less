@@ -6,7 +6,7 @@ html {
 body {
   background-color: white;
 
-.font-main();
+  .font-main();
 }
 
 *,
@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-  padding-right: 20px;
-  padding-left: 20px;
+  min-width: 320px;
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -34,4 +34,16 @@ body {
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .container {
+    padding: 0 40px;
+  }
 }

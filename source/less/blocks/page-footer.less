@@ -12,11 +12,25 @@
   text-align: center;
 
   border-bottom: 1px solid @color-border;
+
   &:hover {
     .logo-hover();
   }
 
   &:active {
     .logo-active();
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .page-footer__logo {
+    padding-top: 61px;
+    padding-bottom: 59px;
   }
 }

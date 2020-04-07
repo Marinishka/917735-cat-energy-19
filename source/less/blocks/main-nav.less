@@ -1,4 +1,6 @@
 .main-nav {
+  z-index: 1;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -29,5 +31,24 @@
 
   &--close {
     background-image: url("../img/icon-close.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    flex-grow: 1;
+
+    font-size: 18px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .main-nav {
+    flex-grow: 0;
+    width: 50%;
   }
 }
