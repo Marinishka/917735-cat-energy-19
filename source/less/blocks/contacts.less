@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   padding: 31px 19px 25px;
+
   &--white {
     background-color: white;
   }
+
   &--gray {
     background-color: @color-bg-secondary;
   }
@@ -35,4 +37,23 @@
 .contacts__live-map {
   position: absolute;
   left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__address {
+    padding: 66px 72px 59px;
+  }
+
+  .contacts__title {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__superscription {
+    width: 160px;
+
+    text-align: right;
+  }
 }

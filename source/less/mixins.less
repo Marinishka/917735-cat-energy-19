@@ -6,16 +6,24 @@
   display: @display;
 }
 
-//Недодел
 .title-line() {
-  height: 3px;
-  margin-left: 24px;
+  &::before {
+    top: 44px;
+    z-index: -1;
 
-  vertical-align: middle;
+    width: 100%;
+    height: 3px;
 
-  background-color: @color-bg-main;
+    vertical-align: middle;
 
-  .pseudo(relative; inline-block);
+    background-color: @color-bg-main;
+
+    .pseudo(absolute; inline-block);
+
+    @media (min-width: @tablet-width) {
+      top: 50px;
+    }
+  }
 }
 
 .margin-center() {
@@ -23,41 +31,65 @@
   margin-left: auto;
 }
 
-.font-main(@size: 14px;
-@line-height: 18px; ) {
-  font-size: @size;
-  line-height: @line-height;
+.font-main() {
+  font-size: 14px;
+  line-height: 18px;
   font-family: @font-main;
   color: @color-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.title-section(@padding: 31px 0 35px;
-@color: #111111) {
+.title-section(@color: #111111) {
   margin: 0;
-  padding: @padding;
 
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: @color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 51px;
+    padding-bottom: 61px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .font-item() {
+  margin: 0 0 0 -20px;
   padding-top: 30px;
+  padding-right: 20px;
   padding-bottom: 30px;
+  padding-left: 20px;
 
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #111111;
+  color: @color-text-two;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.font-title-product(@color: #111111) {
+.font-title-product(@color: @color-text-two) {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: @color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .logo-hover() {

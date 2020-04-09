@@ -3,7 +3,7 @@
   height: 289px;
   margin-right: auto;
   margin-left: auto;
-  padding: 43px 60px ;
+  padding: 43px 60px;
 
   background-color: #6fb346;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -25,4 +25,42 @@
   font-family: @font-text;
   text-align: center;
   color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    height: 200px;
+    padding: 65px 125px 69px 91px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .stock__icon {
+    margin: 0;
+  }
+
+  .stock__text {
+    width: 160px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .stock {
+    flex-direction: column;
+    width: 245px;
+    height: 289px;
+    padding: 65px 43px 43px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .stock__text {
+    text-align: center;
+  }
 }

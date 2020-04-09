@@ -6,7 +6,7 @@ html {
 body {
   background-color: white;
 
-.font-main();
+  .font-main();
 }
 
 *,
@@ -16,8 +16,21 @@ body {
 }
 
 .container {
+  min-width: 320px;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desctop-width) {
+    max-width: @desctop-width;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .visually-hidden {

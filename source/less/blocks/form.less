@@ -1,10 +1,15 @@
 
 .form__fieldset {
+  position: relative;
+
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
 
   border: none;
+
+  &--with-line {
+    .title-line();
+  }
+
   &--program {
     margin-top: 23px;
     padding-top: 21px;
@@ -14,11 +19,16 @@
   }
 }
 
+.form__fieldset:not(.form__fieldset--program) {
+  padding: 0;
+}
+
 .form__legend {
+  padding-right: 23px;
+
+  background-color: white;
+
   .font-item();
-  &::after {
-    .title-line();
-  }
 }
 
 .form__text {
@@ -39,15 +49,15 @@
   font-size: 16px;
   color: @color-text-three;
   text-transform: uppercase;
+
   &--radio {
     &::before {
       width: 30px;
       height: 30px;
       margin-right: 16px;
 
-      border: 1px solid @color-border;
+      border: 1px solid @color-border-two;
       border-radius: 50%;
-      opacity: 0.5;
 
       .pseudo(relative, inline-block);
     }
@@ -59,8 +69,7 @@
       height: 30px;
       margin-right: 16px;
 
-      border: 1px solid @color-border;
-      opacity: 0.5;
+      border: 1px solid @color-border-two;
 
       .pseudo(relative, inline-block);
     }
@@ -68,11 +77,12 @@
 
   &:hover::before,
   &:focus::before {
-    opacity: 1;
+    border-color: #bababa;
   }
 
   &--checkbox:active,
   &--radio:active {
+    border-color: #bababa;
     opacity: 0.3;
   }
 }
@@ -95,7 +105,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px 17px;
-    opacity: 1;
   }
 }
 
@@ -108,9 +117,14 @@
   margin-left: 15px;
   padding: 14px 35px 13px 16px;
 
+  color: @color-text;
   text-transform: uppercase;
 
   border: 1px solid @color-border;
+
+  &:hover {
+    border-color: @color-border-two;
+  }
 
   &:invalid,
   &:invalid + .form__icon path {
@@ -120,6 +134,7 @@
 
     fill: @color-invalid;
   }
+
 
   &:focus,
   &:focus + .form__icon path {
@@ -142,6 +157,7 @@
   &--phone {
     right: 13px;
   }
+
   path {
     fill: @color-text-three;
   }
@@ -152,9 +168,17 @@
   min-height: 150px;
   padding: 15px 15px 15px 16px;
 
+  font-size: 16px;
   text-transform: uppercase;
 
+  border-color: @color-border;
+
   resize: none;
+
+  &:hover {
+    border-color: @color-border-two;
+  }
+
   &:focus {
     padding: 14px 14px 14px 15px;
 
@@ -164,6 +188,7 @@
 }
 
 .form__button {
+  width: 100%;
   margin-top: 34px;
   margin-bottom: 23px;
   padding: 0;
@@ -176,4 +201,11 @@
   font-size: 14px;
   font-family: @font-text;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form__text {
+    width: 400px;
+    padding-left: 70px;
+  }
 }

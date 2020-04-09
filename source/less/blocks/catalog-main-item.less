@@ -6,23 +6,47 @@
 
   border-bottom: 1px solid @color-border;
 
+  &--show-all {
+    flex-direction: column;
+    padding-top: 27px;
+
+    &::before {
+      width: 31px;
+      height: 31px;
+      margin: 0 auto 27px;
+
+      background-image: url("../img/icon-plus-mobile.svg");
+      opacity: 0.2;
+
+      .pseudo(relative, block);
+    }
+  }
+
   &:first-of-type {
     border-top: 1px solid @color-border;
   }
 }
 
+.catalog-main-item__detail {
+  flex-grow: 1;
+  padding: 18px 0 20px;
+}
+
 .catalog-main-item__title {
   width: 100px;
   margin: 0;
-  padding: 25px 11px 0;
+  padding-bottom: 18px;
+
   text-align: left;
+
   .font-title-product();
 
   &--show-all {
-    margin: 0 auto;
-    padding: 83px 0 11px;
-    text-align: center;
     width: auto;
+    margin: 0 auto;
+    padding: 0 0 11px;
+
+    text-align: center;
   }
 }
 
@@ -33,10 +57,85 @@
   font-family: @font-text;
 }
 
-.catalog-main-item__image {
-  order: -1;
+.catalog-main-item__link {
+  width: 100%;
+
+  font-size: 16px;
 }
 
-.catalog-main-item__link {
-  font-size: 16px;
+@media (min-width: @tablet-width) {
+  .catalog-main-item {
+    flex-direction: column;
+    width: 45.7%;
+    min-height: 513px;
+    margin-bottom: 60px;
+    padding: 0 37px 40px;
+
+    background-image: linear-gradient(to top, @color-bg-secondary 0, @color-bg-secondary 431px, transparent 431px, transparent 100%);
+    border: none;
+
+    &:first-of-type {
+      border: none;
+    }
+
+    &:nth-of-type(odd) {
+      margin-right: auto;
+    }
+
+    &--show-all {
+      min-height: 432px;
+      margin-top: 82px;
+      padding-top: 55px;
+
+      background-image: none;
+      border: 1px solid @color-border;
+
+      &::before {
+        width: 61px;
+        height: 61px;
+        margin-bottom: 50px;
+
+        background-image: url("../img/icon-plus.svg");
+      }
+    }
+  }
+
+  .catalog-main-item__image {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .catalog-main-item__detail {
+    padding-top: 39px;
+    padding-bottom: 33px;
+  }
+
+  .catalog-main-item__title {
+    width: 150px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    &--show-all {
+      padding-bottom: 28px;
+    }
+  }
+
+  .catalog-main-item__text {
+    width: 170px;
+    padding-bottom: 85px;
+
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .catalog-main-item {
+    width: 245px;
+
+    &:not(:nth-of-type(4n)) {
+      margin-right: 80px;
+    }
+  }
 }

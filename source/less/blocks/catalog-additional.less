@@ -1,20 +1,23 @@
 .catalog-additional {
+  position: relative;
+
   padding-bottom: 35px;
+
+  .title-line();
 }
 
 .catalog-additional__title {
-  position: relative;
-
   display: inline-block;
-  margin: 0;
-  padding-left: 19px;
 
   vertical-align: middle;
 
-  .font-item();
+  background-color: white;
 
-  //Недодел
-  &::after {
-    .title-line();
+  .font-item();
+}
+
+@media (min-width: @desctop-width) {
+  .catalog-additional__wrapper {
+    display: flex;
   }
 }
