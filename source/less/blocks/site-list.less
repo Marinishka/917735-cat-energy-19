@@ -8,11 +8,11 @@
 }
 
 .site-list__item {
-  width: 100%;
+  padding: 0 20px;
 
   text-align: center;
 
-  border-bottom: 1px solid @color-border;
+  border-top: 1px solid @color-border;
 }
 
 .site-list__link {
@@ -54,20 +54,20 @@
     flex-grow: 1;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-right: 31px;
   }
 
   .site-list__item {
     width: auto;
+    margin: 0;
+    padding: 0;
 
-    border-bottom: none;
+    border-top: none;
   }
 }
 
 @media (min-width: @desctop-width) {
   .site-list {
     justify-content: space-around;
-    padding-right: 40px;
   }
 
   .site-list__link {

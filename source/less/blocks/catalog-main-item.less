@@ -66,8 +66,9 @@
 @media (min-width: @tablet-width) {
   .catalog-main-item {
     flex-direction: column;
-    width: 45%;
+    width: 45.7%;
     min-height: 513px;
+    margin-bottom: 60px;
     padding: 0 37px 40px;
 
     background-image: linear-gradient(to top, @color-bg-secondary 0, @color-bg-secondary 431px, transparent 431px, transparent 100%);
@@ -78,11 +79,7 @@
     }
 
     &:nth-of-type(odd) {
-      margin-right: 60px;
-    }
-
-    &:nth-of-type(n+1) {
-      margin-bottom: 60px;
+      margin-right: auto;
     }
 
     &--show-all {
@@ -137,7 +134,7 @@
   .catalog-main-item {
     width: 245px;
 
-    &:not(:nth-of-type(4n+4)) {
+    &:not(:nth-of-type(4n)) {
       margin-right: 80px;
     }
   }

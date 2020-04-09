@@ -3,9 +3,13 @@
   background-color: @color-bg-secondary;
 }
 
+.example__wrapper {
+  .container();
+}
+
 .example__title {
   margin: 0;
-  padding-top: 12px;
+  padding-top: 33px;
   padding-bottom: 33px;
 
   .title-section();
@@ -25,7 +29,7 @@
 
 .example__item {
   display: flex;
-  flex-basis: 50%;
+  width: 50%;
   flex-direction: column;
 
   &:not(:last-of-type) {
@@ -120,7 +124,7 @@
 
 .example__button {
   display: inline-block;
-  padding: 0 18px;
+  margin: 0 18px;
 
   font-size: 16px;
   vertical-align: middle;
@@ -141,9 +145,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 72px;
   }
 
   .example__item {
+    width: 162px;
+
     &:not(:last-of-type) {
       margin-right: 42px;
     }
@@ -158,10 +165,22 @@
 
   .example__term {
     width: auto;
-
+    padding: 0 9px;
     font-size: 14px;
 
-    background: white;
+    background-color: white;
+  }
+
+  .example__price {
+    width: 180px;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 0;
+  }
+
+  .example__slider-wrapper {
+    .container();
   }
 
   .example__image-wrapper {
@@ -179,5 +198,90 @@
       width: auto;
       height: 517px;
     }
+  }
+
+  .example__range-bar {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+  }
+
+  .example__button {
+    padding: 0;
+    line-height: 25px;
+    border-bottom: 1px dotted fade(@color-text-two, 23%);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid fade(@color-text-two, 40%);
+    }
+
+    &:active {
+      border: none;
+      padding-bottom: 1px;
+    }
+  }
+
+  .example__control {
+    width: 34px;
+    height: 34px;
+    border: 1px solid @color-border-two;
+    border-radius: 50%;
+    top: calc(50% - 17px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+    &::before {
+      top: calc(50% - 4px);
+      left: calc(50% - 4px);
+      background-color: @color-bg-main;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      .pseudo();
+    }
+  }
+}
+
+@media (min-width: @desctop-width) {
+  .example__container {
+    display: flex;
+    padding-bottom: 75px;
+    .container();
+  }
+
+  .example__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__text {
+    width: 430px;
+  }
+
+  .example__term {
+    background-color: @color-bg-secondary;
+  }
+
+  .example__price {
+    width: auto;
+  }
+
+  .example__price-of-what {
+    padding-right: 64px;
+  }
+
+  .example__slider-wrapper {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__range-wrapper {
+    padding: 0;
   }
 }

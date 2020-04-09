@@ -1,7 +1,7 @@
 
 .programs-list {
-  margin: 0;
-  padding-top: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   list-style: none;
 }
@@ -9,9 +9,10 @@
 .programs-list__item {
   position: relative;
 
-  padding: 0 20px 20px;
+  padding: 39px 20px 20px;
 
   background-color: @color-bg-secondary;
+
   &::before {
     top: 24px;
     left: 22px;
@@ -61,9 +62,11 @@
   padding-bottom: 36px;
   padding-left: 72px;
 
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: @color-text-two;
   text-transform: uppercase;
-
-  .font-item();
 }
 
 .programs-list__text {
@@ -113,7 +116,7 @@
 @media (min-width: @tablet-width) {
   .programs-list__item {
     min-height: 372px;
-    padding-top: 51px;
+    padding-top: 81px;
     padding-bottom: 62px;
     padding-left: 55px;
 
@@ -155,6 +158,9 @@
 
   .programs-list__title {
     padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .programs-list__text {
@@ -176,7 +182,8 @@
 
   .programs-list__item {
     width: 570px;
-    padding: 0 52px 62px;
+    padding-right: 56px;
+    padding-left: 52px;
 
     &:not(:last-of-type) {
       margin: 0;
@@ -212,7 +219,7 @@
   }
 
   .programs-list__title {
-    padding: 81px 0 75px 164px;
+    padding: 0 0 75px 164px;
   }
 
   .programs-list__text {
