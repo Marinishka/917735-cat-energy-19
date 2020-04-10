@@ -29,8 +29,8 @@
 
 .example__item {
   display: flex;
-  width: 50%;
   flex-direction: column;
+  width: 50%;
 
   &:not(:last-of-type) {
     margin-right: 32px;
@@ -166,6 +166,7 @@
   .example__term {
     width: auto;
     padding: 0 9px;
+
     font-size: 14px;
 
     background-color: white;
@@ -173,10 +174,11 @@
 
   .example__price {
     width: 180px;
-    text-align: right;
-    font-size: 20px;
     padding-top: 13px;
     padding-bottom: 0;
+
+    font-size: 20px;
+    text-align: right;
   }
 
   .example__slider-wrapper {
@@ -203,13 +205,16 @@
   .example__range-bar {
     width: 428px;
     height: 6px;
-    border-radius: 2.5px;
+
     background-color: #dcdcdc;
+    border-radius: 2.5px;
   }
 
   .example__button {
     padding: 0;
+
     line-height: 25px;
+
     border-bottom: 1px dotted fade(@color-text-two, 23%);
 
     &:hover,
@@ -218,27 +223,33 @@
     }
 
     &:active {
-      border: none;
       padding-bottom: 1px;
+
+      border: none;
     }
   }
 
   .example__control {
+    top: calc(50% - 17px);
+
     width: 34px;
     height: 34px;
+
+    background-color: white;
     border: 1px solid @color-border-two;
     border-radius: 50%;
-    top: calc(50% - 17px);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    background-color: white;
 
     &::before {
       top: calc(50% - 4px);
       left: calc(50% - 4px);
-      background-color: @color-bg-main;
-      border-radius: 50%;
+
       width: 8px;
       height: 8px;
+
+      background-color: @color-bg-main;
+      border-radius: 50%;
+
       .pseudo();
     }
   }
@@ -248,13 +259,14 @@
   .example__container {
     display: flex;
     padding-bottom: 75px;
+
     .container();
   }
 
   .example__wrapper {
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 570px;
     margin: 0;
     padding: 0;
   }
@@ -279,6 +291,13 @@
     width: 50%;
     margin: 0;
     padding: 0;
+  }
+
+  .example__image {
+    &--before {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .example__range-wrapper {
