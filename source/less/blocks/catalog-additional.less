@@ -8,6 +8,8 @@
 
 .catalog-additional__title {
   display: inline-block;
+  padding-top: 28px;
+  padding-bottom: 34px;
 
   vertical-align: middle;
 
@@ -16,8 +18,32 @@
   .font-item();
 }
 
+@media (min-width: @tablet-width) {
+  .catalog-additional {
+    padding-top: 8px;
+    padding-bottom: 76px;
+  }
+
+  .catalog-additional__title {
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+
+  .catalog-additional__wrapper {
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: @desctop-width) {
+  .catalog-additional {
+    padding-bottom: 20px;
+  }
+
   .catalog-additional__wrapper {
     display: flex;
+  }
+
+  .catalog-additional__title {
+    margin-left: -40px;
   }
 }

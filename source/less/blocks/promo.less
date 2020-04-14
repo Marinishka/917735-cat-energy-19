@@ -20,7 +20,7 @@
 .promo__header {
   display: flex;
   flex-direction: column;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 22px;
 
   color: white;
@@ -28,9 +28,10 @@
 
 .promo__title {
   display: block;
+  padding-bottom: 25px;
 
   text-align: center;
-  padding-bottom: 19px;
+
   .title-section(white);
 }
 
@@ -44,8 +45,8 @@
 
 .promo__image {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 3px;
+  margin-top: 9px;
+  margin-bottom: 4px;
 
   text-align: center;
 
@@ -81,12 +82,14 @@
 
 @media (min-width: @tablet-width) {
   .promo__header {
-    padding-left: 120px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 117px;
   }
 
   .promo__title {
     width: 415px;
-    padding-bottom: 35px;
+    padding-bottom: 41px;
 
     text-align: left;
     color: @color-text-two;
@@ -106,11 +109,22 @@
     display: none;
   }
 
+  .promo__wrapper {
+    margin-top: -80px;
+    margin-left: -90px;
+  }
+
   .promo__image {
+    width: 709px;
+    height: 609px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
   }
 
   .promo__link {
+    z-index: 1;
+
     order: 0;
     width: auto;
     height: 52px;
@@ -131,9 +145,13 @@
   .promo__header {
     position: relative;
 
-    min-height: 654px;
+    min-height: 656px;
     padding-top: 84px;
-    padding-left: 153px;
+    padding-left: 120px;
+  }
+
+  .promo__title {
+    padding-top: 19px;
   }
 
   .promo__background {
@@ -143,20 +161,22 @@
     display: block;
     width: 50%;
     height: 696px;
-    background-position: right;
+
     background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: right;
     background-size: 720px 696px;
   }
 
   .promo__text {
     width: 415px;
+    margin-bottom: 53px;
     padding: 0;
   }
 
   .promo__image {
     position: absolute;
-    top: 29px;
-    right: 328px;
+    top: 23px;
+    right: 258px;
     z-index: -1;
 
     width: 552px;

@@ -13,12 +13,12 @@
 
   &--pet {
     padding-right: 20px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
     padding-left: 20px;
   }
 
   &--program {
-    padding: 21px 20px;
+    padding: 20px 20px 22px;
 
     border: 1px solid @color-border;
   }
@@ -26,31 +26,23 @@
 
 
 .form__wrapper {
-  &--1 {
+  &--double {
     padding: 0 20px;
   }
 }
 
 .form__legend {
-  padding-right: 23px;
+  padding-top: 27px;
+  padding-bottom: 33px;
 
   background-color: white;
 
   .font-item();
 }
 
-.form__text {
-  margin: 0;
-  padding-right: 70px;
-  padding-bottom: 39px;
-
-  color: @color-text-two;
-  text-transform: uppercase;
-}
-
 .form__list {
   margin: 0;
-  padding: 0;
+  padding: 2px 0 0;
 
   list-style: none;
 }
@@ -70,9 +62,10 @@
   font-size: 16px;
   color: @color-text-three;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &:not(:last-of-type) {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   &--radio {
@@ -135,6 +128,7 @@
 
 .form__data {
   flex-grow: 1;
+  width: 100%;
   margin-left: 15px;
   padding: 14px 35px 13px 16px;
 
@@ -186,7 +180,7 @@
 .form__textarea {
   width: 100%;
   min-height: 150px;
-  padding: 15px 15px 15px 16px;
+  padding: 13px 12px 15px 15px;
 
   font-size: 16px;
   text-transform: uppercase;
@@ -209,14 +203,16 @@
 
 .form__button {
   width: 100%;
-  margin-top: 22px;
-  margin-bottom: 23px;
+  margin-top: 34px;
+  margin-bottom: 20px;
   padding: 0;
+
+  font-size: 16px;
 }
 
 .form__footnote {
   display: block;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 
   font-size: 14px;
   font-family: @font-text;
@@ -224,18 +220,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__wrapper {
-    padding: 0 70px 70px;
+  .form {
+    padding-bottom: 17px;
   }
 
-  .form__text {
-    width: 400px;
-    padding-bottom: 0;
+  .form__wrapper {
+    padding: 0 70px 67px;
+
+    &--double {
+      padding-top: 8px;
+      padding-bottom: 55px;
+    }
   }
 
   .form__legend {
+    margin-left: -40px;
     padding-right: 40px;
-    // padding-bottom: 70px;
+    padding-bottom: 78px;
     padding-left: 40px;
 
     &--additional {
@@ -247,12 +248,19 @@
     &--pet {
       padding: 0 0 72px;
     }
+
+    &--program {
+      padding: 25px 28px;
+    }
   }
 
   .form__list {
+    padding: 0;
+
     &--control {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
@@ -264,7 +272,7 @@
     }
 
     &--control {
-      width: 50%;
+      width: 45%;
 
       &:not(:last-of-type) {
         margin-bottom: 32px;
@@ -273,6 +281,8 @@
   }
 
   .form__label {
+    font-size: 20px;
+
     &--data {
       &:not(:last-of-type) {
         margin-bottom: 20px;
@@ -290,8 +300,13 @@
       &::before {
         width: 40px;
         height: 40px;
+        margin-right: 19px;
       }
     }
+  }
+
+  .form__data {
+    margin-left: 18px;
   }
 
   .form__control {
@@ -303,14 +318,23 @@
     }
   }
 
+  .form__textarea {
+    min-height: 174px;
+
+    font-size: 20px;
+  }
+
   .form__button {
     display: inline-block;
     width: auto;
-    margin-top: 10px;
-    margin-right: 61px;
+    min-height: 52px;
+    margin-top: 22px;
+    margin-right: 57px;
     margin-bottom: 0;
     padding-right: 67px;
     padding-left: 63px;
+
+    font-size: 20px;
   }
 
   .form__footnote {
@@ -322,11 +346,17 @@
 }
 
 @media (min-width: @desctop-width) {
+  .form {
+    padding-bottom: 27px;
+  }
+
   .form__wrapper {
     .container();
 
-    &:not(.form__wrapper--1) {
+
+    &:not(.form__wrapper--double) {
       display: flex;
+      padding-bottom: 61px;
     }
   }
 
@@ -364,12 +394,18 @@
     }
 
     &--control {
-      width: 25%;
+      width: 20%;
+    }
+  }
+
+  .form__legend {
+    &--additional {
+      padding-bottom: 57px;
     }
   }
 
   .form__button {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 82px;
     padding-right: 206px;
     padding-left: 209px;

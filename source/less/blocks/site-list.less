@@ -1,5 +1,6 @@
 
 .site-list {
+  display: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -19,8 +20,8 @@
   position: relative;
 
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 23px;
+  padding-bottom: 22px;
 
   vertical-align: middle;
   color: @color-text-two;
@@ -63,15 +64,20 @@
 
     border-top: none;
   }
+
+  .site-list__link {
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
 }
 
 @media (min-width: @desctop-width) {
   .site-list {
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   .site-list__link {
-    // color: white;
+    margin-left: 43px;
 
     &--active::after {
       // background-color: white;
