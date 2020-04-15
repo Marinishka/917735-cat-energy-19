@@ -27,6 +27,10 @@
   }
 }
 
+.catalog-main-item__wrapper {
+ height: 144px;
+}
+
 .catalog-main-item__detail {
   flex-grow: 1;
   padding: 21px 0 20px;
@@ -87,8 +91,6 @@
     &--show-all {
       min-height: 432px;
       margin-top: 82px;
-      padding-right: 40px;
-      padding-left: 40px;
 
       background-image: none;
       border: 1px solid @color-border;
@@ -103,9 +105,10 @@
     }
   }
 
-  .catalog-main-list__wrapper {
+  .catalog-main-item__wrapper {
     margin-right: auto;
     margin-left: auto;
+    height: auto;
   }
 
   .catalog-main-item__image {
@@ -149,6 +152,12 @@
 
   .catalog-main-item__table {
     margin-bottom: 32px;
+  }
+
+  .catalog-main-item__link {
+    margin-left: 38px;
+    margin-right: 37px;
+    width: auto;
   }
 }
 

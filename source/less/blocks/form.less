@@ -24,7 +24,6 @@
   }
 }
 
-
 .form__wrapper {
   &--double {
     padding: 0 20px;
@@ -137,12 +136,20 @@
 
   border: 1px solid @color-border;
 
+  &--owner {
+    margin-left: 10px;
+  }
+
+  &::placeholder {
+    color: @color-text;
+  }
+
   &:hover {
     border-color: @color-border-two;
   }
 
-  &:invalid,
-  &:invalid + .form__icon path {
+  &:focus:invalid,
+  &:focus:invalid + .form__icon path {
     padding: 13px 34px 12px 15px;
 
     border: 2px solid @color-invalid;
@@ -404,10 +411,24 @@
     }
   }
 
+  .form__data {
+    &--email {
+      margin-left: 22px;
+    }
+  }
+
+  .form__icon {
+    right: 18px;
+  }
+
   .form__button {
     margin-top: 30px;
-    margin-right: 82px;
+    margin-right: 79px;
     padding-right: 206px;
     padding-left: 209px;
+  }
+
+  .form__footnote {
+    vertical-align: super;
   }
 }
