@@ -1,8 +1,7 @@
 
 .catalog-main-list {
-  margin: 0;
+  margin: 3px 0 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -10,9 +9,14 @@
   .catalog-main-list {
     display: flex;
     flex-wrap: wrap;
-
+    padding-top: 28px;
+    margin-top: 0;
     .container;
   }
 }
 
-// @media(min-width: @desctop-width)
+@media (min-width: @desctop-width) {
+  .catalog-main {
+    padding-bottom: 7px;
+  }
+}
