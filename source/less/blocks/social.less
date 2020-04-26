@@ -10,8 +10,7 @@
   border-bottom: 1px solid @color-border;
 }
 
-.social__icon path,
-.social__icon circle {
+.social__icon {
   fill: @color-footer-icon;
 }
 
@@ -24,15 +23,13 @@
     margin-right: 36px;
   }
 
-  &:hover path,
-  &:hover circle,
-  &:focus path,
-  &:focus circle {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: @color-bg-main;
   }
 
-  &:active path,
-  &:active circle {
+  &:active .social__icon,
+  &:active .social__icon {
     opacity: 0.3;
 
     fill: @color-bg-main;
