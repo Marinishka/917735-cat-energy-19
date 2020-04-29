@@ -148,28 +148,28 @@
     border-color: @color-border-two;
   }
 
-  &:focus:invalid,
-  &:focus:invalid + .form__icon path {
+  &:focus:invalid {
     padding: 13px 34px 12px 15px;
 
     border: 2px solid @color-invalid;
+  }
 
+  &:focus:invalid + .form__icon {
     fill: @color-invalid;
   }
 
-  &:focus,
-  &:focus + .form__icon path {
+  &:focus {
     padding: 13px 34px 12px 15px;
 
     border: 2px solid @color-text;
     outline: none;
-
-    fill: @color-bg-main;
   }
 }
 
 .form__icon {
   position: absolute;
+
+  fill: @color-text-three;
 
   &--email {
     right: 15px;
@@ -177,10 +177,6 @@
 
   &--phone {
     right: 13px;
-  }
-
-  path {
-    fill: @color-text-three;
   }
 }
 

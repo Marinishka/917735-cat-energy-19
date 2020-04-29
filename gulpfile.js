@@ -84,14 +84,14 @@ gulp.task("copy", function () {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  "css", 
-  "sprite", 
+  "css",
+  "sprite",
   "html"
 ));
 
 gulp.task("server", function () {
   server.init({
-    server: "build/" 
+    server: "build/"
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));

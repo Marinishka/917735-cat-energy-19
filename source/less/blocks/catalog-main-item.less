@@ -9,21 +9,20 @@
   &--show-all {
     flex-direction: column;
     padding-top: 25px;
-
-    &::before {
-      width: 31px;
-      height: 31px;
-      margin: 0 auto 23px;
-
-      background-image: url("../img/icon-plus-mobile.svg");
-      opacity: 0.2;
-
-      .pseudo(relative, block);
-    }
   }
 
   &:first-of-type {
     border-top: 1px solid @color-border;
+  }
+}
+
+.catalog-main-item__icon {
+  margin: 0 auto 23px;
+
+  opacity: 0.2;
+
+  &--plus {
+    display: none;
   }
 }
 
@@ -94,14 +93,17 @@
 
       background-image: none;
       border: 1px solid @color-border;
+    }
+  }
 
-      &::before {
-        width: 61px;
-        height: 61px;
-        margin-bottom: 50px;
+  .catalog-main-item__icon {
+    &--mobile {
+      display: none;
+    }
 
-        background-image: url("../img/icon-plus.svg");
-      }
+    &--plus {
+      display: block;
+      margin-bottom: 50px;
     }
   }
 

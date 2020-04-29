@@ -26,32 +26,6 @@
     .pseudo();
   }
 
-  &--slim::after {
-    top: 22px;
-    left: 30px;
-
-    width: 35px;
-    height: 49px;
-
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-
-    .pseudo();
-  }
-
-  &--pro::after {
-    top: 35px;
-    left: 13px;
-
-    width: 68px;
-    height: 28px;
-
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-
-    .pseudo();
-  }
-
   &:not(:last-of-type) {
     margin-bottom: 20px;
   }
@@ -67,6 +41,18 @@
   line-height: 24px;
   color: @color-text-two;
   text-transform: uppercase;
+}
+
+.programs-list__icon-slim {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+}
+
+.programs-list__icon-pro {
+  position: absolute;
+  top: 35px;
+  left: 13px;
 }
 
 .programs-list__text {
@@ -131,28 +117,10 @@
 
     &--slim {
       padding-right: 280px;
-
-      &::after {
-        top: 80px;
-        right: 92px;
-        left: auto;
-
-        width: 141px;
-        height: 194px;
-      }
     }
 
     &--pro {
       padding-right: 310px;
-
-      &::after {
-        top: 135px;
-        right: 28px;
-        left: auto;
-
-        width: 268px;
-        height: 113px;
-      }
     }
 
     &:not(:last-of-type) {
@@ -166,6 +134,24 @@
 
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .programs-list__icon-slim {
+    top: 80px;
+    right: 92px;
+    left: auto;
+
+    width: 141px;
+    height: 194px;
+  }
+
+  .programs-list__icon-pro {
+    top: 135px;
+    right: 28px;
+    left: auto;
+
+    width: 268px;
+    height: 113px;
   }
 
   .programs-list__text {
@@ -207,28 +193,28 @@
       width: 100px;
       height: 100px;
     }
-
-    &--slim::after {
-      top: 42px;
-      right: auto;
-      left: 66px;
-
-      width: 71px;
-      height: 97px;
-    }
-
-    &--pro::after {
-      top: 70px;
-      right: auto;
-      left: 34px;
-
-      width: 134px;
-      height: 57px;
-    }
   }
 
   .programs-list__title {
     padding: 0 0 75px 162px;
+  }
+
+  .programs-list__icon-slim {
+    top: 42px;
+    right: auto;
+    left: 66px;
+
+    width: 71px;
+    height: 97px;
+  }
+
+  .programs-list__icon-pro {
+    top: 70px;
+    right: auto;
+    left: 34px;
+
+    width: 134px;
+    height: 57px;
   }
 
   .programs-list__text {

@@ -77,16 +77,19 @@
 }
 
 .example__image-wrapper {
-  text-align: center;
+  position: relative;
 }
 
 .example__image {
-  &--was {
-    display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  &--not-visible {
+    display: none;
   }
 
-  &--after {
-    display: none;
+  &--visible {
+    display: block;
   }
 }
 
@@ -122,6 +125,16 @@
 
   background-color: @color-bg-main;
   border-radius: 3px;
+
+  &--left {
+    right: auto;
+    left: 6px;
+  }
+
+  &--right {
+    right: 6px;
+    left: auto;
+  }
 }
 
 .example__button {
@@ -276,6 +289,16 @@
       border-radius: 50%;
 
       .pseudo();
+    }
+
+    &--left {
+      right: auto;
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+      left: auto;
     }
   }
 }
