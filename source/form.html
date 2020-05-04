@@ -22,7 +22,7 @@
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__toggle-open" width="25" height="19">
+          <svg class="main-nav__toggle-open visually-hidden" width="25" height="19">
             <use xlink:href="#icon-mobile-menu"></use>
           </svg>
           <svg class="main-nav__toggle-close visually-hidden" width="19" height="19">
@@ -44,7 +44,7 @@
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post" name="program-selection">
         <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--pet">
-            <legend class="visually-hidden">Данные питомца</legend>
+            <p class="visually-hidden">Данные питомца</p>
             <label class="form__label form__label--data" for="name">
               Имя:*
               <input class="form__data" type="text" id="name" name="name" placeholder="Барсик" required="">
@@ -59,7 +59,7 @@
             </label>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--program">
-            <legend class="visually-hidden">Ожидаемый результат</legend>
+            <p class="visually-hidden">Ожидаемый результат</p>
             <input class="form__control form__control--radio visually-hidden" type="radio" id="slim" name="program-option" value="slim" checked="">
             <label class="form__label form__label--radio" for="slim">Похудение</label>
             <input class="form__control form__control--radio visually-hidden" type="radio" id="pro" name="program-option" value="pro">
@@ -70,7 +70,7 @@
         </div>
         <fieldset class="form__fieldset form__fieldset--with-line">
           <div class="form__wrapper form__wrapper--double">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <p class="form__legend form__legend--owner">Контактные данные (владельца кота)</p>
             <ul class="form__list form__list--data">
               <li class="form__item form__item--data">
                 <label class="form__label" for="email">
@@ -95,13 +95,13 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--with-line">
           <div class="form__wrapper form__wrapper--double">
-            <legend class="form__legend">Комментарий</legend>
+            <p class="form__legend">Комментарий</p>
             <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--with-line">
           <div class="form__wrapper form__wrapper--double">
-            <legend class="form__legend form__legend--additional">Дополнительно</legend>
+            <p class="form__legend form__legend--additional">Дополнительно</p>
             <ul class="form__list form__list--control">
               <li class="form__item form__item--control">
                 <input class="form__control form__control--checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked="">

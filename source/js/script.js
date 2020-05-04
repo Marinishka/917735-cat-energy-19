@@ -9,6 +9,7 @@ var btnHasBecome = document.querySelector(".example__button--has-become");
 var control = document.querySelector(".example__control");
 
 menu.classList.remove("site-list--no-js");
+btnOpen.classList.remove("visually-hidden");
 
 btn.addEventListener("click", function () {
 if (btnClose.classList.contains("visually-hidden")) {

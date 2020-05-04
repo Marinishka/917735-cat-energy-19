@@ -33,8 +33,12 @@
 .form__legend {
   padding-top: 27px;
   padding-bottom: 33px;
-
+  display: inline-block;
   background-color: white;
+
+  &--owner {
+    width: 223px;
+  }
 
   .font-item();
 }
@@ -242,6 +246,10 @@
     padding-bottom: 78px;
     padding-left: 40px;
 
+    &--owner {
+      width: auto;
+    }
+
     &--additional {
       padding-bottom: 53px;
     }
@@ -356,6 +364,7 @@
     margin-bottom: 0;
 
     font-size: 16px;
+    vertical-align: super;
   }
 }
 
@@ -419,6 +428,8 @@
   }
 
   .form__data {
+    height: 52px;
+
     &--email {
       margin-left: 22px;
     }

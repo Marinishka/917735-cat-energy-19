@@ -22,7 +22,7 @@
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <svg class="main-nav__toggle-open" width="25" height="19">
+          <svg class="main-nav__toggle-open visually-hidden" width="25" height="19">
             <use xlink:href="#icon-mobile-menu"></use>
           </svg>
           <svg class="main-nav__toggle-close visually-hidden" width="19" height="19">
@@ -42,16 +42,20 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="catalog-main__list catalog-main-list">
           <li class="catalog-main-list__item catalog-main-item"><!--1-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-              <source srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом курицы массой 500 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+                <source srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом курицы массой 500 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy pro 500 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy pro 500 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -70,16 +74,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--2-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-              <source srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом курицы массой 1000 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                <source srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом курицы массой 1000 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy pro 1000 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy pro 1000 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -98,16 +106,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--3-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
-              <source srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом рыбы массой 500 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
+                <source srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом рыбы массой 500 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy pro 500 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy pro 500 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -126,16 +138,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--4-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
-              <source srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом рыбы массой 1000 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
+                <source srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» про со вкусом рыбы массой 1000 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy pro 1000 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy pro 1000 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -154,16 +170,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--5-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-              <source srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом гречки массой 500 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+                <source srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом гречки массой 500 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy slim 500 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy slim 500 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -182,16 +202,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--6-->
-            <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-              <source srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом гречки массой 1000 грамм">
-            </picture>
+            <a href="#">
+              <picture class="catalog-main-item__wrapper">
+                <source type="image/webp" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+                <source srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом гречки массой 1000 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy slim 1000 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy slim 1000 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
@@ -210,16 +234,20 @@
             <a class="catalog-main-item__link button button--color-main" href="#">Заказать</a>
           </li>
           <li class="catalog-main-list__item catalog-main-item"><!--7-->
+            <a href="#">
             <picture class="catalog-main-item__wrapper">
-              <source type="image/webp" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
-              <source type="image/webp" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
-              <source srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x" media="(min-width: 768px)">
-              <img class="catalog-main-item__image catalog-main-item__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом риса массой 500 грамм">
-            </picture>
+                <source type="image/webp" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x" media="(min-width: 1300px)">
+                <source type="image/webp" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+                <source srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="catalog-main-item__image catalog-main-item__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Корм для кота «Кэт энерджи» слим со вкусом риса массой 500 грамм">
+              </picture>
+            </a>
             <div class="catalog-main-item__detail">
-              <h3 class="catalog-main-item__title">Cat energy slim 500 г</h3>
+              <a class="catalog-main-item__page" href="#">
+                <h3 class="catalog-main-item__title">Cat energy slim 500 г</h3>
+              </a>
               <table class="catalog-main-item__table item-table-main">
                 <tr class="item-table-main__row">
                   <td class="item-table-main__cell item-table-main__cell--left">Объем</td>
