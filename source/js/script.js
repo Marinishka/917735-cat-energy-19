@@ -31,10 +31,10 @@ btnWas.addEventListener("click", function () {
   exmplBefore.classList.add("example__image--visible");
   control.classList.add("example__control--left");
   control.classList.remove("example__control--right");
-}); 
+});
 
 btnHasBecome.addEventListener("click", function () {
-  exmplBefore.classList.remove("example__image--visible"); 
+  exmplBefore.classList.remove("example__image--visible");
   exmplBefore.classList.add("example__image--not-visible");
   exmplAfter.classList.remove("example__image--not-visible");
   exmplAfter.classList.add("example__image--visible");
