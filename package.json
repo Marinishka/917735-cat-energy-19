@@ -42,7 +42,7 @@
     "source/img/**/*.svg",
     "source/less/**/*.less"
   ],
-    "engines": {
+  "engines": {
     "node": "8.16"
   },
   "dependencies": {
