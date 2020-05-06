@@ -31,16 +31,17 @@
 }
 
 .form__legend {
+  display: inline-block;
   padding-top: 27px;
   padding-bottom: 33px;
-  display: inline-block;
+
   background-color: white;
+
+  .font-item();
 
   &--owner {
     width: 223px;
   }
-
-  .font-item();
 }
 
 .form__list {
@@ -65,7 +66,10 @@
   font-size: 16px;
   color: @color-text-three;
   text-transform: uppercase;
-  white-space: nowrap;
+
+  &--data {
+    white-space: nowrap;
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 12px;
@@ -73,6 +77,7 @@
 
   &--radio {
     &::before {
+      flex-shrink: 0;
       width: 30px;
       height: 30px;
       margin-right: 16px;
@@ -86,6 +91,7 @@
 
   &--checkbox {
     &::before {
+      flex-shrink: 0;
       width: 30px;
       height: 30px;
       margin-right: 16px;
@@ -109,8 +115,12 @@
 }
 
 .form__control {
+  &--radio:focus + .form__label--radio::before {
+    border-color: #bababa;
+  }
+
   &--radio:checked + .form__label--radio::after {
-    top: 9px;
+    top: calc(50% - 6px);
     left: 9px;
 
     width: 12px;
@@ -119,7 +129,15 @@
     background-color: @color-bg-main;
     border-radius: 50%;
 
-    .pseudo(absolute, inline-block);
+    .pseudo(absolute, inline-block);;
+  }
+
+  &--radio:disabled + .form__label--radio {
+    opacity: 0.2;
+  }
+
+  &--checkbox:focus + .form__label--checkbox::before {
+    border-color: #bababa;
   }
 
   &--checkbox:checked + .form__label--checkbox::before {
@@ -127,6 +145,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px 17px;
+  }
+
+  &--checkbox:disabled + .form__label--checkbox {
+    opacity: 0.2;
   }
 }
 
@@ -332,7 +354,7 @@
 
   .form__control {
     &--radio:checked + .form__label--radio::after {
-      top: 11px;
+      top: calc(50% - 9px);
       left: 11px;
 
       width: 18px;
