@@ -1,11 +1,30 @@
 .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
-  padding: 23px 12px 17px 0;
+  padding: 16px 0 14px 0;
 
   list-style: none;
   text-align: center;
 
   border-bottom: 1px solid @color-border;
+}
+
+.social__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+
+  line-height: 32px;
+
+  &--inst {
+    padding-top: 3px;
+  }
+
+  &--fb {
+    padding-top: 3px;
+  }
 }
 
 .social__icon {
@@ -15,10 +34,8 @@
 .social__item {
   display: inline-block;
 
-  vertical-align: middle;
-
   &:not(:last-of-type) {
-    margin-right: 36px;
+    margin-right: 21px;
   }
 
   &:hover .social__icon,
@@ -36,15 +53,25 @@
 
 @media (min-width: @tablet-width) {
   .social {
-    padding-right: 18px;
-    padding-left: 18px;
-
+    // padding-right: 18px;
+    // padding-left: 29px;
     border: none;
   }
 
   .social__item {
     &:not(:last-of-type) {
-      margin-right: 26px;
+      margin-right: 14px;
+      margin-left: 9px;
+    }
+  }
+
+  .social__link {
+    &--vk {
+      padding-top: 2px;
+    }
+
+    &--inst {
+      padding-top: 6px;
     }
   }
 

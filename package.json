@@ -42,7 +42,7 @@
     "source/img/**/*.svg",
     "source/less/**/*.less"
   ],
-    "dependencies": {
+  "dependencies": {
     "del": "^5.1.0"
   },
   "engines": {
