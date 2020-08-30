@@ -15,6 +15,13 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var ghPages = require('gh-pages');
+var path = require('path');
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("clean", function () {
   return del("build");
